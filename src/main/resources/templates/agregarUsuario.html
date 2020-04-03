@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Agregar Usuario:</h1>
+    <form action="#" th:action="@{/agregarUsuario}" th:object="${usuario}" method="post">
+    	<input placeholder="Nombre" type="text" th:field="*{nombre}">
+    	<br>
+    	<input placeholder="Ocupacion" type="text" th:field="*{ocu}">
+    	<br>
+    	<input type="submit" value="Enviar"><input type="reset" value="Borrar">
+    </form>
+</body>
+</html>
